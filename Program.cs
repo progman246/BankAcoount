@@ -1,12 +1,14 @@
 ﻿using System;
+using classes;
 
-namespace Bank_Account
+namespace BankAccount
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var account=new Bankaccount("ali",1000);
+            Console.WriteLine($"account {account.Number}"+" "+$" was created for {account.Owner} with {account.Balance} initial Balance ");
         }
     }
 }
